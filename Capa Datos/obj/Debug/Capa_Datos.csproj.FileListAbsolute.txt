@@ -1,0 +1,9 @@
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\bin\Debug\Capa_Datos.exe.config
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\bin\Debug\Capa_Datos.exe
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.Properties.Resources.resources
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.exe
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.pdb

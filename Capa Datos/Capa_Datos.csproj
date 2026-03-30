@@ -7,7 +7,7 @@
     <ProjectGuid>{6EDEFA4B-BE4E-4679-B46F-7F1A982DF585}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Capa_Datos</RootNamespace>
-    <AssemblyName>Capa Datos</AssemblyName>
+    <AssemblyName>Capa_Datos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -58,6 +58,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
