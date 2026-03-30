@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Registro Usuarios Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c74f443434fbce68fdf0accac80052b9b0a0166e")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bb01eb833204aef0345cb58076c6160f819ec1f")]
->>>>>>> 37d0842542c06773c6d527525df782e55de3f9c7
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+836e515c0418d4603c680384bddd7f6bd8056b6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Registro Usuarios Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Registro Usuarios Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
