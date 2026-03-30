@@ -35,5 +35,18 @@ namespace Logica_Negocios
         {
             data_usuario.EliminarUsuario(_id);
         }
+
+        public bool ValidarUsuario(string _nombre, string _contraseña)
+        {
+            var usuarios = data_usuario.ObtenerUsuarios(_nombre);
+            foreach (var usuario in usuarios)
+            {
+                if ((usuario.Nombre == _nombre) && (usuario.Contraseña == _contraseña))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
