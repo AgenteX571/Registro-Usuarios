@@ -1,0 +1,108 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Registro Usuarios Test\\Registro Usuarios Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Capa Datos\\Capa_Datos.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Capa Datos\\Capa_Datos.csproj",
+        "projectName": "Capa_Datos",
+        "projectPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Capa Datos\\Capa_Datos.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Logica Negocios\\Logica Negocios.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Logica Negocios\\Logica Negocios.csproj",
+        "projectName": "Logica Negocios",
+        "projectPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Logica Negocios\\Logica Negocios.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Capa Datos\\Capa_Datos.csproj": {
+                "projectPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Capa Datos\\Capa_Datos.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Registro Usuarios Test\\Registro Usuarios Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Registro Usuarios Test\\Registro Usuarios Test.csproj",
+        "projectName": "Registro Usuarios Test",
+        "projectPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Registro Usuarios Test\\Registro Usuarios Test.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Registro Usuarios Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Logica Negocios\\Logica Negocios.csproj": {
+                "projectPath": "C:\\Users\\marti\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Itla\\Cuatrimestre 5\\Programacion 3\\Proyectos\\Registro Usuarios\\Logica Negocios\\Logica Negocios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "MSTest": {
+              "target": "Package",
+              "version": "[3.6.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
