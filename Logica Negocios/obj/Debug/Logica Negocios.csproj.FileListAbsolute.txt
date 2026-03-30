@@ -11,3 +11,4 @@ C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cu
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Logica Negocios\obj\Debug\Logica N.BA4C526B.Up2Date
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Logica Negocios\obj\Debug\Logica Negocios.exe
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Logica Negocios\obj\Debug\Logica Negocios.pdb
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Logica Negocios\obj\Debug\Logica Negocios.exe.config

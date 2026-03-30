@@ -7,3 +7,4 @@ C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cu
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.exe
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Capa Datos\obj\Debug\Capa_Datos.exe.config

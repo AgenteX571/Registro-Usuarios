@@ -21,7 +21,7 @@ namespace Capa_Datos
             using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
-                string query = "execute procedure sp_Crear_Usuario";
+                string query = "execute procedure sp_Crear_Usuario @Nombre, @Contraseña";
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
                 {
                     cmd.Parameters.AddWithValue("@Nombre", _nombre);
@@ -37,7 +37,7 @@ namespace Capa_Datos
             using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
-                string query = "execute sp_Obtener_Usuarios";
+                string query = "execute sp_Obtener_Usuarios @Nombre";
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
                 {
                     cmd.Parameters.AddWithValue("@Nombre", _nombre);
@@ -62,7 +62,7 @@ namespace Capa_Datos
 
         public Usuario BuscarUsuario(int _id) 
         {
-            string query = "execute sp_Buscar_Usuario";
+            string query = "execute sp_Buscar_Usuario @Id";
             using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
@@ -86,7 +86,7 @@ namespace Capa_Datos
 
         public void ActualizarUsuario(int _id, string _nombre, string _contraseña) 
         {
-            string query = "execute sp_Actualizar_Usuario";
+            string query = "execute sp_Actualizar_Usuario @Id, @Nombre, @Contraseña";
             using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
@@ -103,7 +103,7 @@ namespace Capa_Datos
 
         public void EliminarUsuario(int _id) 
         {
-            string query = "execute sp_Eliminar_Usuario";
+            string query = "execute sp_Eliminar_Usuario @Id";
             using (SqlConnection cxn = new SqlConnection(cnn.db)) 
             {
                 cxn.Open();
