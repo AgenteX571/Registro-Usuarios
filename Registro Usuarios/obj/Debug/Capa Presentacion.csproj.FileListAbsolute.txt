@@ -17,3 +17,4 @@ C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cu
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Registro Usuarios\bin\Debug\Logica Negocios.exe.config
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Registro Usuarios\bin\Debug\Capa_Datos.pdb
 C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Registro Usuarios\bin\Debug\Capa_Datos.exe.config
+C:\Users\marti\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Itla\Cuatrimestre 5\Programacion 3\Proyectos\Registro Usuarios\Registro Usuarios\obj\Debug\Registro_Usuarios.Menu.resources
