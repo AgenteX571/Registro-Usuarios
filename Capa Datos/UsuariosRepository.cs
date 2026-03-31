@@ -9,6 +9,7 @@ namespace Capa_Datos
 {
     public class UsuariosRepository
     {
+        // Clase abstracta para la tabla de usuarios
         public class Usuario
         {
             public int Id { get; set; }
