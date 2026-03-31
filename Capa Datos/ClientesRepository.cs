@@ -19,8 +19,8 @@ namespace Capa_Datos
 
         public void AgregarCliente(string _nombre, int _edad, string _email)
         {
-            string query = "execute procedure sp_Crear_Cliente @Nombre, @Edad, @Correo";
-            using (SqlConnection cxn = new SqlConnection())
+            string query = "execute sp_Crear_Cliente @Nombre, @Edad, @Correo";
+            using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
@@ -35,8 +35,8 @@ namespace Capa_Datos
 
         public List<Clientes> ObtenerClientes(string _nombre)
         {
-            string query = "execute procedure sp_Obtener_Clientes @Nombre";
-            using (SqlConnection cxn = new SqlConnection())
+            string query = "execute sp_Obtener_Clientes @Nombre";
+            using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
@@ -64,8 +64,8 @@ namespace Capa_Datos
 
         public Clientes BuscarCliente(int _id)
         {
-            string query = "execute procedure sp_Buscar_Cliente @ID";
-            using (SqlConnection cxn = new SqlConnection())
+            string query = "execute sp_Buscar_Cliente @ID";
+            using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
@@ -95,8 +95,8 @@ namespace Capa_Datos
 
         public void ActualizarCliente(int _id, string _nombre, int _edad, string _correo)
         {
-            string query = "execute procedure sp_Actualizar_Cliente @ID, @Nombre, @Edad, @Correo";
-            using (SqlConnection cxn = new SqlConnection())
+            string query = "execute sp_Actualizar_Cliente @ID, @Nombre, @Edad, @Correo";
+            using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
@@ -112,8 +112,8 @@ namespace Capa_Datos
 
         public void EliminarCliente(int _id)
         {
-            string query = "execute procedure sp_Eliminar_Cliente @ID";
-            using (SqlConnection cxn = new SqlConnection())
+            string query = "execute sp_Eliminar_Cliente @ID";
+            using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
