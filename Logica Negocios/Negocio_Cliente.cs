@@ -35,5 +35,19 @@ namespace Logica_Negocios
         {
             data_clientes.EliminarCliente(_id);
         }
+
+        public bool VerificarCliente(string _nombre, int _edad, string _correo) 
+        {
+            var clientes = data_clientes.ObtenerClientes(_nombre);
+
+            foreach (var cliente in clientes)
+            {
+                if ((cliente.Nombre == _nombre) && (cliente.Edad == _edad) && (cliente.Email == _correo))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
