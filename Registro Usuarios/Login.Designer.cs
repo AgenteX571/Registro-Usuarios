@@ -68,7 +68,6 @@
             this.txt_contraseña.PasswordChar = '*';
             this.txt_contraseña.Size = new System.Drawing.Size(333, 27);
             this.txt_contraseña.TabIndex = 11;
-            this.txt_contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_contraseña_KeyPress);
             // 
             // txt_nombre
             // 
@@ -78,7 +77,6 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(333, 27);
             this.txt_nombre.TabIndex = 10;
-            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // bunifuCustomLabel3
             // 
@@ -125,7 +123,6 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "Login";
             this.Text = "Login";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
