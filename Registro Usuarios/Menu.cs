@@ -27,6 +27,7 @@ namespace Registro_Usuarios
 
         }
 
+        // evento del menu para salir del sistema
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
@@ -126,6 +127,7 @@ namespace Registro_Usuarios
             }
         }
 
+        // evento del menu para mostrar el panel de clientes
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LimpiarFormularioCliente();
@@ -231,6 +233,7 @@ namespace Registro_Usuarios
             data = false;
         }
 
+        // evento d el menu para mostrar el panel de empleados
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LimpiarFormularioEmpleado();
