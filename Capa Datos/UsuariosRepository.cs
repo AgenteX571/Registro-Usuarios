@@ -22,7 +22,7 @@ namespace Capa_Datos
             using (SqlConnection cxn = new SqlConnection(cnn.db))
             {
                 cxn.Open();
-                string query = "execute procedure sp_Crear_Usuario @Nombre, @Contraseña";
+                string query = "execute sp_Crear_Usuario @Nombre, @Contraseña";
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
                 {
                     cmd.Parameters.AddWithValue("@Nombre", _nombre);
