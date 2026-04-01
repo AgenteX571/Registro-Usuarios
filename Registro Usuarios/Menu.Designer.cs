@@ -74,11 +74,29 @@
             this.txt_nombre_empleados = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel_usuarios = new System.Windows.Forms.Panel();
+            this.btn_borrar_usuario = new System.Windows.Forms.Button();
+            this.btn_actualizar_usuario = new System.Windows.Forms.Button();
+            this.btn_editar_usuario = new System.Windows.Forms.Button();
+            this.btn_crear_usuario = new System.Windows.Forms.Button();
+            this.dataGridView_usuarios = new System.Windows.Forms.DataGridView();
+            this.txt_buscar_usuario = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.btn_buscar_usuario = new System.Windows.Forms.Button();
+            this.txt_contraseña_usuario = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txt_nombre_usuario = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panel_clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).BeginInit();
             this.panel_empleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_empleados)).BeginInit();
+            this.panel_usuarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_usuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -121,6 +139,7 @@
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -567,11 +586,186 @@
             this.bunifuCustomLabel8.TabIndex = 0;
             this.bunifuCustomLabel8.Text = "Empleados";
             // 
+            // panel_usuarios
+            // 
+            this.panel_usuarios.Controls.Add(this.btn_borrar_usuario);
+            this.panel_usuarios.Controls.Add(this.btn_actualizar_usuario);
+            this.panel_usuarios.Controls.Add(this.btn_editar_usuario);
+            this.panel_usuarios.Controls.Add(this.btn_crear_usuario);
+            this.panel_usuarios.Controls.Add(this.dataGridView_usuarios);
+            this.panel_usuarios.Controls.Add(this.txt_buscar_usuario);
+            this.panel_usuarios.Controls.Add(this.btn_buscar_usuario);
+            this.panel_usuarios.Controls.Add(this.txt_contraseña_usuario);
+            this.panel_usuarios.Controls.Add(this.bunifuCustomLabel12);
+            this.panel_usuarios.Controls.Add(this.txt_nombre_usuario);
+            this.panel_usuarios.Controls.Add(this.bunifuCustomLabel13);
+            this.panel_usuarios.Controls.Add(this.bunifuCustomLabel14);
+            this.panel_usuarios.Location = new System.Drawing.Point(12, 67);
+            this.panel_usuarios.Name = "panel_usuarios";
+            this.panel_usuarios.Size = new System.Drawing.Size(709, 557);
+            this.panel_usuarios.TabIndex = 17;
+            this.panel_usuarios.Visible = false;
+            // 
+            // btn_borrar_usuario
+            // 
+            this.btn_borrar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrar_usuario.Location = new System.Drawing.Point(563, 505);
+            this.btn_borrar_usuario.Name = "btn_borrar_usuario";
+            this.btn_borrar_usuario.Size = new System.Drawing.Size(119, 49);
+            this.btn_borrar_usuario.TabIndex = 14;
+            this.btn_borrar_usuario.Text = "Borrar";
+            this.btn_borrar_usuario.UseVisualStyleBackColor = true;
+            this.btn_borrar_usuario.Click += new System.EventHandler(this.btn_borrar_usuario_Click);
+            // 
+            // btn_actualizar_usuario
+            // 
+            this.btn_actualizar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizar_usuario.Location = new System.Drawing.Point(563, 441);
+            this.btn_actualizar_usuario.Name = "btn_actualizar_usuario";
+            this.btn_actualizar_usuario.Size = new System.Drawing.Size(119, 49);
+            this.btn_actualizar_usuario.TabIndex = 13;
+            this.btn_actualizar_usuario.Text = "Actualizar";
+            this.btn_actualizar_usuario.UseVisualStyleBackColor = true;
+            this.btn_actualizar_usuario.Click += new System.EventHandler(this.btn_actualizar_usuario_Click);
+            // 
+            // btn_editar_usuario
+            // 
+            this.btn_editar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar_usuario.Location = new System.Drawing.Point(563, 369);
+            this.btn_editar_usuario.Name = "btn_editar_usuario";
+            this.btn_editar_usuario.Size = new System.Drawing.Size(119, 49);
+            this.btn_editar_usuario.TabIndex = 12;
+            this.btn_editar_usuario.Text = "Editar";
+            this.btn_editar_usuario.UseVisualStyleBackColor = true;
+            this.btn_editar_usuario.Click += new System.EventHandler(this.btn_editar_usuario_Click);
+            // 
+            // btn_crear_usuario
+            // 
+            this.btn_crear_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_crear_usuario.Location = new System.Drawing.Point(563, 292);
+            this.btn_crear_usuario.Name = "btn_crear_usuario";
+            this.btn_crear_usuario.Size = new System.Drawing.Size(119, 49);
+            this.btn_crear_usuario.TabIndex = 11;
+            this.btn_crear_usuario.Text = "Crear";
+            this.btn_crear_usuario.UseVisualStyleBackColor = true;
+            this.btn_crear_usuario.Click += new System.EventHandler(this.btn_crear_usuario_Click);
+            // 
+            // dataGridView_usuarios
+            // 
+            this.dataGridView_usuarios.AllowUserToAddRows = false;
+            this.dataGridView_usuarios.AllowUserToDeleteRows = false;
+            this.dataGridView_usuarios.AllowUserToResizeColumns = false;
+            this.dataGridView_usuarios.AllowUserToResizeRows = false;
+            this.dataGridView_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_usuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.Contraseña});
+            this.dataGridView_usuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView_usuarios.Location = new System.Drawing.Point(30, 325);
+            this.dataGridView_usuarios.Name = "dataGridView_usuarios";
+            this.dataGridView_usuarios.RowHeadersVisible = false;
+            this.dataGridView_usuarios.RowHeadersWidth = 51;
+            this.dataGridView_usuarios.RowTemplate.Height = 24;
+            this.dataGridView_usuarios.Size = new System.Drawing.Size(515, 229);
+            this.dataGridView_usuarios.TabIndex = 10;
+            // 
+            // txt_buscar_usuario
+            // 
+            this.txt_buscar_usuario.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_buscar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscar_usuario.Location = new System.Drawing.Point(30, 292);
+            this.txt_buscar_usuario.Name = "txt_buscar_usuario";
+            this.txt_buscar_usuario.Size = new System.Drawing.Size(428, 27);
+            this.txt_buscar_usuario.TabIndex = 9;
+            // 
+            // btn_buscar_usuario
+            // 
+            this.btn_buscar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar_usuario.Location = new System.Drawing.Point(464, 292);
+            this.btn_buscar_usuario.Name = "btn_buscar_usuario";
+            this.btn_buscar_usuario.Size = new System.Drawing.Size(81, 30);
+            this.btn_buscar_usuario.TabIndex = 8;
+            this.btn_buscar_usuario.Text = "Buscar";
+            this.btn_buscar_usuario.UseVisualStyleBackColor = true;
+            this.btn_buscar_usuario.Click += new System.EventHandler(this.btn_buscar_usuario_Click);
+            // 
+            // txt_contraseña_usuario
+            // 
+            this.txt_contraseña_usuario.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_contraseña_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_contraseña_usuario.Location = new System.Drawing.Point(30, 154);
+            this.txt_contraseña_usuario.Name = "txt_contraseña_usuario";
+            this.txt_contraseña_usuario.Size = new System.Drawing.Size(323, 27);
+            this.txt_contraseña_usuario.TabIndex = 4;
+            // 
+            // bunifuCustomLabel12
+            // 
+            this.bunifuCustomLabel12.AutoSize = true;
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(36, 131);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(95, 20);
+            this.bunifuCustomLabel12.TabIndex = 3;
+            this.bunifuCustomLabel12.Text = "Contraseña";
+            // 
+            // txt_nombre_usuario
+            // 
+            this.txt_nombre_usuario.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_nombre_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre_usuario.Location = new System.Drawing.Point(30, 81);
+            this.txt_nombre_usuario.Name = "txt_nombre_usuario";
+            this.txt_nombre_usuario.Size = new System.Drawing.Size(336, 27);
+            this.txt_nombre_usuario.TabIndex = 2;
+            // 
+            // bunifuCustomLabel13
+            // 
+            this.bunifuCustomLabel13.AutoSize = true;
+            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(36, 58);
+            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(68, 20);
+            this.bunifuCustomLabel13.TabIndex = 1;
+            this.bunifuCustomLabel13.Text = "Nombre";
+            // 
+            // bunifuCustomLabel14
+            // 
+            this.bunifuCustomLabel14.AutoSize = true;
+            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(25, 10);
+            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(108, 29);
+            this.bunifuCustomLabel14.TabIndex = 0;
+            this.bunifuCustomLabel14.Text = "Usuarios";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 200;
+            // 
+            // Contraseña
+            // 
+            this.Contraseña.HeaderText = "Contraseña";
+            this.Contraseña.MinimumWidth = 6;
+            this.Contraseña.Name = "Contraseña";
+            this.Contraseña.Width = 225;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 636);
+            this.Controls.Add(this.panel_usuarios);
             this.Controls.Add(this.panel_empleados);
             this.Controls.Add(this.panel_clientes);
             this.Controls.Add(this.menuStrip1);
@@ -585,6 +779,9 @@
             this.panel_empleados.ResumeLayout(false);
             this.panel_empleados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_empleados)).EndInit();
+            this.panel_usuarios.ResumeLayout(false);
+            this.panel_usuarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_usuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -638,5 +835,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Puesto;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_puesto;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
+        private System.Windows.Forms.Panel panel_usuarios;
+        private System.Windows.Forms.Button btn_borrar_usuario;
+        private System.Windows.Forms.Button btn_actualizar_usuario;
+        private System.Windows.Forms.Button btn_editar_usuario;
+        private System.Windows.Forms.Button btn_crear_usuario;
+        private System.Windows.Forms.DataGridView dataGridView_usuarios;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_buscar_usuario;
+        private System.Windows.Forms.Button btn_buscar_usuario;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_contraseña_usuario;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_nombre_usuario;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contraseña;
     }
 }
