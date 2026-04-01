@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ClientesRepository.cs" />
     <Compile Include="cnn.cs" />
+    <Compile Include="EmpleadosRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuariosRepository.cs" />
