@@ -6,6 +6,7 @@
         // Instancias de las clases de lógica de negocios
         Logica_Negocios.Negocio_Usuarios logica_user = new Logica_Negocios.Negocio_Usuarios();
         Logica_Negocios.Negocio_Cliente logica_cliente = new Logica_Negocios.Negocio_Cliente();
+        Logica_Negocios.Negocio_Empleados logica_empleado = new Logica_Negocios.Negocio_Empleados();
 
         [TestMethod]
         public void TestLoginTrue()
@@ -32,6 +33,21 @@
         public void TestClienteFalse()
         {
             bool resultado = logica_cliente.VerificarCliente("hjabsdh ad", 300, "ajsbdhgash");
+            Assert.IsFalse(resultado);
+        }
+
+        [TestMethod]
+        public void TestEmpleadoTrue()
+        {
+            bool resultado = logica_empleado.VerificarEmpleado("Daniel Augusto", 20, "MartineZapata@gmail.com", "Senior Developer");
+            Assert.IsTrue(resultado);
+        }
+
+        [TestMethod]
+        public void TestEmpleadoFalse()
+        {
+            bool resultado = logica_empleado.VerificarEmpleado("asdasd asdas", 300, "asdasd", "asdasd");
+            Assert.IsFalse(resultado);
         }
     }
 }

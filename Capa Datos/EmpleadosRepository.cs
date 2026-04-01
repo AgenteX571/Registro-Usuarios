@@ -44,6 +44,7 @@ namespace Capa_Datos
                 cxn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, cxn))
                 {
+                    cmd.Parameters.AddWithValue("@Nombre", _nombre);
                     using (SqlDataReader rd = cmd.ExecuteReader())
                     {
                         while (rd.Read())
