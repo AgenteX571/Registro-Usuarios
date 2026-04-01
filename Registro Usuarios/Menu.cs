@@ -236,5 +236,7 @@ namespace Registro_Usuarios
             panel_clientes.Visible = false;
             panel_empleados.Visible = true;
         }
+
+        // Metodos panel de usuarios
     }
 }
