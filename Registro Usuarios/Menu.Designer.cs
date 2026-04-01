@@ -52,9 +52,33 @@
             this.txt_nombre_cliente = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.panel_empleados = new System.Windows.Forms.Panel();
+            this.txt_puesto = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btn_borrar_empleado = new System.Windows.Forms.Button();
+            this.btn_actualizar_empleado = new System.Windows.Forms.Button();
+            this.btn_editar_empleado = new System.Windows.Forms.Button();
+            this.btn_crear_empleado = new System.Windows.Forms.Button();
+            this.dataGridView_empleados = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_buscar_empleado = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.btn_buscar_empleado = new System.Windows.Forms.Button();
+            this.txt_correo_empleados = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txt_edad_empleados = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txt_nombre_empleados = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.menuStrip1.SuspendLayout();
             this.panel_clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).BeginInit();
+            this.panel_empleados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_empleados)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -79,6 +103,7 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(84, 27);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
@@ -87,6 +112,7 @@
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
             this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(107, 27);
             this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
@@ -126,6 +152,7 @@
             this.panel_clientes.Name = "panel_clientes";
             this.panel_clientes.Size = new System.Drawing.Size(709, 557);
             this.panel_clientes.TabIndex = 1;
+            this.panel_clientes.Visible = false;
             // 
             // btn_borrar_cliente
             // 
@@ -308,11 +335,244 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Clientes";
             // 
+            // panel_empleados
+            // 
+            this.panel_empleados.Controls.Add(this.txt_puesto);
+            this.panel_empleados.Controls.Add(this.bunifuCustomLabel9);
+            this.panel_empleados.Controls.Add(this.btn_borrar_empleado);
+            this.panel_empleados.Controls.Add(this.btn_actualizar_empleado);
+            this.panel_empleados.Controls.Add(this.btn_editar_empleado);
+            this.panel_empleados.Controls.Add(this.btn_crear_empleado);
+            this.panel_empleados.Controls.Add(this.dataGridView_empleados);
+            this.panel_empleados.Controls.Add(this.txt_buscar_empleado);
+            this.panel_empleados.Controls.Add(this.btn_buscar_empleado);
+            this.panel_empleados.Controls.Add(this.txt_correo_empleados);
+            this.panel_empleados.Controls.Add(this.bunifuCustomLabel5);
+            this.panel_empleados.Controls.Add(this.txt_edad_empleados);
+            this.panel_empleados.Controls.Add(this.bunifuCustomLabel6);
+            this.panel_empleados.Controls.Add(this.txt_nombre_empleados);
+            this.panel_empleados.Controls.Add(this.bunifuCustomLabel7);
+            this.panel_empleados.Controls.Add(this.bunifuCustomLabel8);
+            this.panel_empleados.Location = new System.Drawing.Point(12, 67);
+            this.panel_empleados.Name = "panel_empleados";
+            this.panel_empleados.Size = new System.Drawing.Size(709, 557);
+            this.panel_empleados.TabIndex = 15;
+            this.panel_empleados.Visible = false;
+            // 
+            // txt_puesto
+            // 
+            this.txt_puesto.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_puesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_puesto.Location = new System.Drawing.Point(388, 81);
+            this.txt_puesto.Name = "txt_puesto";
+            this.txt_puesto.Size = new System.Drawing.Size(213, 27);
+            this.txt_puesto.TabIndex = 16;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.AutoSize = true;
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(384, 58);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(61, 20);
+            this.bunifuCustomLabel9.TabIndex = 15;
+            this.bunifuCustomLabel9.Text = "Puesto";
+            // 
+            // btn_borrar_empleado
+            // 
+            this.btn_borrar_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrar_empleado.Location = new System.Drawing.Point(563, 505);
+            this.btn_borrar_empleado.Name = "btn_borrar_empleado";
+            this.btn_borrar_empleado.Size = new System.Drawing.Size(119, 49);
+            this.btn_borrar_empleado.TabIndex = 14;
+            this.btn_borrar_empleado.Text = "Borrar";
+            this.btn_borrar_empleado.UseVisualStyleBackColor = true;
+            this.btn_borrar_empleado.Click += new System.EventHandler(this.btn_borrar_empleado_Click);
+            // 
+            // btn_actualizar_empleado
+            // 
+            this.btn_actualizar_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizar_empleado.Location = new System.Drawing.Point(563, 441);
+            this.btn_actualizar_empleado.Name = "btn_actualizar_empleado";
+            this.btn_actualizar_empleado.Size = new System.Drawing.Size(119, 49);
+            this.btn_actualizar_empleado.TabIndex = 13;
+            this.btn_actualizar_empleado.Text = "Actualizar";
+            this.btn_actualizar_empleado.UseVisualStyleBackColor = true;
+            this.btn_actualizar_empleado.Click += new System.EventHandler(this.btn_actualizar_empleado_Click);
+            // 
+            // btn_editar_empleado
+            // 
+            this.btn_editar_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar_empleado.Location = new System.Drawing.Point(563, 369);
+            this.btn_editar_empleado.Name = "btn_editar_empleado";
+            this.btn_editar_empleado.Size = new System.Drawing.Size(119, 49);
+            this.btn_editar_empleado.TabIndex = 12;
+            this.btn_editar_empleado.Text = "Editar";
+            this.btn_editar_empleado.UseVisualStyleBackColor = true;
+            this.btn_editar_empleado.Click += new System.EventHandler(this.btn_editar_empleado_Click);
+            // 
+            // btn_crear_empleado
+            // 
+            this.btn_crear_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_crear_empleado.Location = new System.Drawing.Point(563, 292);
+            this.btn_crear_empleado.Name = "btn_crear_empleado";
+            this.btn_crear_empleado.Size = new System.Drawing.Size(119, 49);
+            this.btn_crear_empleado.TabIndex = 11;
+            this.btn_crear_empleado.Text = "Crear";
+            this.btn_crear_empleado.UseVisualStyleBackColor = true;
+            this.btn_crear_empleado.Click += new System.EventHandler(this.btn_crear_empleado_Click);
+            // 
+            // dataGridView_empleados
+            // 
+            this.dataGridView_empleados.AllowUserToAddRows = false;
+            this.dataGridView_empleados.AllowUserToDeleteRows = false;
+            this.dataGridView_empleados.AllowUserToResizeColumns = false;
+            this.dataGridView_empleados.AllowUserToResizeRows = false;
+            this.dataGridView_empleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_empleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.Puesto});
+            this.dataGridView_empleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView_empleados.Location = new System.Drawing.Point(30, 325);
+            this.dataGridView_empleados.Name = "dataGridView_empleados";
+            this.dataGridView_empleados.RowHeadersVisible = false;
+            this.dataGridView_empleados.RowHeadersWidth = 51;
+            this.dataGridView_empleados.RowTemplate.Height = 24;
+            this.dataGridView_empleados.Size = new System.Drawing.Size(515, 229);
+            this.dataGridView_empleados.TabIndex = 10;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 147;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Edad";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 60;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Correo";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 175;
+            // 
+            // Puesto
+            // 
+            this.Puesto.HeaderText = "Puesto";
+            this.Puesto.MinimumWidth = 6;
+            this.Puesto.Name = "Puesto";
+            this.Puesto.Width = 125;
+            // 
+            // txt_buscar_empleado
+            // 
+            this.txt_buscar_empleado.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_buscar_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscar_empleado.Location = new System.Drawing.Point(30, 292);
+            this.txt_buscar_empleado.Name = "txt_buscar_empleado";
+            this.txt_buscar_empleado.Size = new System.Drawing.Size(428, 27);
+            this.txt_buscar_empleado.TabIndex = 9;
+            // 
+            // btn_buscar_empleado
+            // 
+            this.btn_buscar_empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar_empleado.Location = new System.Drawing.Point(464, 292);
+            this.btn_buscar_empleado.Name = "btn_buscar_empleado";
+            this.btn_buscar_empleado.Size = new System.Drawing.Size(81, 30);
+            this.btn_buscar_empleado.TabIndex = 8;
+            this.btn_buscar_empleado.Text = "Buscar";
+            this.btn_buscar_empleado.UseVisualStyleBackColor = true;
+            this.btn_buscar_empleado.Click += new System.EventHandler(this.btn_buscar_empleado_Click);
+            // 
+            // txt_correo_empleados
+            // 
+            this.txt_correo_empleados.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_correo_empleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_correo_empleados.Location = new System.Drawing.Point(30, 227);
+            this.txt_correo_empleados.Name = "txt_correo_empleados";
+            this.txt_correo_empleados.Size = new System.Drawing.Size(336, 27);
+            this.txt_correo_empleados.TabIndex = 6;
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(36, 204);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(60, 20);
+            this.bunifuCustomLabel5.TabIndex = 5;
+            this.bunifuCustomLabel5.Text = "Correo";
+            // 
+            // txt_edad_empleados
+            // 
+            this.txt_edad_empleados.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_edad_empleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_edad_empleados.Location = new System.Drawing.Point(30, 154);
+            this.txt_edad_empleados.Name = "txt_edad_empleados";
+            this.txt_edad_empleados.Size = new System.Drawing.Size(81, 27);
+            this.txt_edad_empleados.TabIndex = 4;
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(36, 131);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(47, 20);
+            this.bunifuCustomLabel6.TabIndex = 3;
+            this.bunifuCustomLabel6.Text = "Edad";
+            // 
+            // txt_nombre_empleados
+            // 
+            this.txt_nombre_empleados.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txt_nombre_empleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre_empleados.Location = new System.Drawing.Point(30, 81);
+            this.txt_nombre_empleados.Name = "txt_nombre_empleados";
+            this.txt_nombre_empleados.Size = new System.Drawing.Size(336, 27);
+            this.txt_nombre_empleados.TabIndex = 2;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(36, 58);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(68, 20);
+            this.bunifuCustomLabel7.TabIndex = 1;
+            this.bunifuCustomLabel7.Text = "Nombre";
+            // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(25, 10);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(136, 29);
+            this.bunifuCustomLabel8.TabIndex = 0;
+            this.bunifuCustomLabel8.Text = "Empleados";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 636);
+            this.Controls.Add(this.panel_empleados);
             this.Controls.Add(this.panel_clientes);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Menu";
@@ -322,6 +582,9 @@
             this.panel_clientes.ResumeLayout(false);
             this.panel_clientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).EndInit();
+            this.panel_empleados.ResumeLayout(false);
+            this.panel_empleados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_empleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,5 +616,27 @@
         private System.Windows.Forms.Button btn_borrar_cliente;
         private System.Windows.Forms.Button btn_actualizar_cliente;
         private System.Windows.Forms.Button btn_editar_cliente;
+        private System.Windows.Forms.Panel panel_empleados;
+        private System.Windows.Forms.Button btn_borrar_empleado;
+        private System.Windows.Forms.Button btn_actualizar_empleado;
+        private System.Windows.Forms.Button btn_editar_empleado;
+        private System.Windows.Forms.Button btn_crear_empleado;
+        private System.Windows.Forms.DataGridView dataGridView_empleados;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_buscar_empleado;
+        private System.Windows.Forms.Button btn_buscar_empleado;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_correo_empleados;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_edad_empleados;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_nombre_empleados;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Puesto;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txt_puesto;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
     }
 }
