@@ -139,6 +139,7 @@
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(89, 27);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -614,6 +615,7 @@
             this.btn_borrar_usuario.TabIndex = 14;
             this.btn_borrar_usuario.Text = "Borrar";
             this.btn_borrar_usuario.UseVisualStyleBackColor = true;
+            this.btn_borrar_usuario.Click += new System.EventHandler(this.btn_borrar_usuario_Click);
             // 
             // btn_actualizar_usuario
             // 
@@ -624,6 +626,7 @@
             this.btn_actualizar_usuario.TabIndex = 13;
             this.btn_actualizar_usuario.Text = "Actualizar";
             this.btn_actualizar_usuario.UseVisualStyleBackColor = true;
+            this.btn_actualizar_usuario.Click += new System.EventHandler(this.btn_actualizar_usuario_Click);
             // 
             // btn_editar_usuario
             // 
@@ -634,6 +637,7 @@
             this.btn_editar_usuario.TabIndex = 12;
             this.btn_editar_usuario.Text = "Editar";
             this.btn_editar_usuario.UseVisualStyleBackColor = true;
+            this.btn_editar_usuario.Click += new System.EventHandler(this.btn_editar_usuario_Click);
             // 
             // btn_crear_usuario
             // 
@@ -644,6 +648,7 @@
             this.btn_crear_usuario.TabIndex = 11;
             this.btn_crear_usuario.Text = "Crear";
             this.btn_crear_usuario.UseVisualStyleBackColor = true;
+            this.btn_crear_usuario.Click += new System.EventHandler(this.btn_crear_usuario_Click);
             // 
             // dataGridView_usuarios
             // 
@@ -683,6 +688,7 @@
             this.btn_buscar_usuario.TabIndex = 8;
             this.btn_buscar_usuario.Text = "Buscar";
             this.btn_buscar_usuario.UseVisualStyleBackColor = true;
+            this.btn_buscar_usuario.Click += new System.EventHandler(this.btn_buscar_usuario_Click);
             // 
             // txt_contraseña_usuario
             // 
@@ -745,14 +751,14 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 175;
+            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // Contraseña
             // 
             this.Contraseña.HeaderText = "Contraseña";
             this.Contraseña.MinimumWidth = 6;
             this.Contraseña.Name = "Contraseña";
-            this.Contraseña.Width = 150;
+            this.Contraseña.Width = 225;
             // 
             // Menu
             // 
