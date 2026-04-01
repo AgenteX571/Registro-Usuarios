@@ -27,6 +27,7 @@ namespace Registro_Usuarios
 
         }
 
+        // evento del menu para salir del sistema
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
@@ -126,10 +127,12 @@ namespace Registro_Usuarios
             }
         }
 
+        // evento del menu para mostrar el panel de clientes
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LimpiarFormularioCliente();
             panel_empleados.Visible = false;
+            panel_usuarios.Visible = false;
             panel_clientes.Visible = true;
         }
 
@@ -175,7 +178,7 @@ namespace Registro_Usuarios
         {
             if (dataGridView_empleados.CurrentRow != null)
             {
-                id_actual = int.Parse(dataGridView_empleados.CurrentRow.Cells[0].Value.ToString()); 
+                id_actual = int.Parse(dataGridView_empleados.CurrentRow.Cells[0].Value.ToString());
                 txt_nombre_empleados.Text = dataGridView_empleados.CurrentRow.Cells[1].Value.ToString();
                 txt_edad_empleados.Text = dataGridView_empleados.CurrentRow.Cells[2].Value.ToString();
                 txt_correo_empleados.Text = dataGridView_empleados.CurrentRow.Cells[3].Value.ToString();
@@ -230,11 +233,111 @@ namespace Registro_Usuarios
             data = false;
         }
 
+        // evento d el menu para mostrar el panel de empleados
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LimpiarFormularioEmpleado();
             panel_clientes.Visible = false;
+            panel_usuarios.Visible = false;
             panel_empleados.Visible = true;
+        }
+
+        // Metodos panel de usuarios
+        Logica_Negocios.Negocio_Usuarios logica_usuarios = new Logica_Negocios.Negocio_Usuarios();
+        private void btn_buscar_usuario_Click(object sender, EventArgs e)
+        {
+            dataGridView_usuarios.Rows.Clear();
+            dataGridView_usuarios.Refresh();
+
+            var usuarios = logica_usuarios.ObtenerUsuarios(txt_buscar_usuario.Text);
+            foreach (var usuario in usuarios)
+            {
+                dataGridView_usuarios.Rows.Add(usuario.Id, usuario.Nombre, usuario.Contraseña);
+            }
+        }
+
+        private void btn_crear_usuario_Click(object sender, EventArgs e)
+        {
+            if ((txt_nombre_usuario.Text != string.Empty) && (txt_contraseña_usuario.Text != string.Empty))
+            {
+                if (data)
+                {
+                    MessageBox.Show("Este Usuario ya existe, por favor elija otro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    LimpiarFormularioUsuario();
+                }
+                else
+                {
+                    logica_usuarios.AgregarUsuario(txt_nombre_usuario.Text, txt_contraseña_usuario.Text);
+                    MessageBox.Show("Usuario creado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormularioUsuario();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, complete todos los campos para crear un usuario", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_editar_usuario_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_usuarios.CurrentRow != null)
+            {
+                id_actual = int.Parse(dataGridView_usuarios.CurrentRow.Cells[0].Value.ToString());
+                txt_nombre_usuario.Text = dataGridView_usuarios.CurrentRow.Cells[1].Value.ToString();
+                txt_contraseña_usuario.Text = dataGridView_usuarios.CurrentRow.Cells[2].Value.ToString();
+                dataGridView_usuarios.Rows.Clear();
+                dataGridView_usuarios.Refresh();
+                data = true;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un usuario para editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_actualizar_usuario_Click(object sender, EventArgs e)
+        {
+            if (data)
+            {
+                logica_usuarios.ActualizarUsuario(id_actual, txt_nombre_usuario.Text, txt_contraseña_usuario.Text);
+                MessageBox.Show("Usuario actualizado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarFormularioUsuario();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un usuario para actualizar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_borrar_usuario_Click(object sender, EventArgs e)
+        {
+            if (data)
+            {
+                logica_usuarios.EliminarUsuario(id_actual);
+                MessageBox.Show("Usuario Eliminado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarFormularioUsuario();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un usuario para eliminar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LimpiarFormularioUsuario()
+        {
+            txt_buscar_usuario.Text = string.Empty;
+            txt_nombre_usuario.Text = string.Empty;
+            txt_contraseña_usuario.Text = string.Empty;
+            dataGridView_usuarios.Rows.Clear();
+            dataGridView_usuarios.Refresh();
+            data = false;
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel_clientes.Visible = false;
+            panel_empleados.Visible = false;
+            panel_usuarios.Visible = true;
         }
     }
 }
